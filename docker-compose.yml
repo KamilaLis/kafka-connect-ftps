@@ -103,8 +103,8 @@ services:
       - -c
       - |
         echo "Installing Connector"
-        # confluent-hub install --no-prompt confluentinc/kafka-connect-ftps:1.0.2-preview
-        # confluent-hub install --no-prompt debezium/debezium-connector-postgresql:1.2.2
+         confluent-hub install --no-prompt confluentinc/kafka-connect-ftps:1.0.2-preview
+         confluent-hub install --no-prompt debezium/debezium-connector-postgresql:1.2.2
         #
         echo "Launching Kafka Connect worker"
         /etc/confluent/docker/run &
